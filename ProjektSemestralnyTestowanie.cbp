@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="ProjektSemestralnyTestowanie" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="ProjektSemestralnyTestowanie">
+         <Option output="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/i386-linux-gnu" />
+            <Add directory="/usr/include/i386-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/i686-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/i686-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 ProjektSemestralnyTestowanie" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="ProjektSemestralnyTestowanie/fast">
+         <Option output="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/i386-linux-gnu" />
+            <Add directory="/usr/include/i386-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/i686-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/i686-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 ProjektSemestralnyTestowanie/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Clock.cpp">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Clock.h">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Compare.cpp">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Compare.h">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Event.cpp">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Event.h">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/EventsQueue.cpp">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/EventsQueue.h">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Linia.cpp">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Linia.h">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Person.cpp">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Person.h">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Simulation.cpp">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Simulation.h">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Stop.cpp">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Stop.h">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Tram.cpp">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Tram.h">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Vehicle.cpp">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/Vehicle.h">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/main.cpp">
+         <Option target="ProjektSemestralnyTestowanie"/>
+      </Unit>
+      <Unit filename="/home/marta/Pobrane/ProjektSemestralnyTestowanie/ProjektSemestralnyTestowanie/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>
