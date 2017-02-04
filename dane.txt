@@ -11,8 +11,9 @@ Banacha
 Krakowskie
 Centrum
 3
-1
 2 Banacha 3 Centrum 2 Krakowskie 10
+2 Centrum 2 Krakowskie 10
+1 Krakowskie 2 Banacha 3
 1
 Uniwersytet-Warszawski Banacha
 1

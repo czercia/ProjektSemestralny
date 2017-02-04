@@ -10,14 +10,14 @@ void Simulation::readInputData() {
 
     std::ifstream input;
     input.open(inputFileName);
-    if( !input.good() )
-    {
+    if (!input.good()) {
         //throw exception file not found
     }
     input >> lengthDays;
     for (int i = 0; i < 4; ++i) {
         int no;
-        input >> no;  howManyPeopleList.push_back(no);
+        input >> no;
+        howManyPeopleList.push_back(no);
     }
     input >> probWorkerGoesLunch;
     input >> probGoShopping;
@@ -26,21 +26,24 @@ void Simulation::readInputData() {
 
     for (int i = 0; i < 4; ++i) {
         double pr;
-        input >> pr; probGoToTheatreList.push_back(pr);
+        input >> pr;
+        probGoToTheatreList.push_back(pr);
     }
     input >> tramCapacity;
     input >> howManyStops;
     for (int i = 0; i < howManyStops; ++i) {
         std::string name;
-        input>>name; stopNamesList.push_back(name);
+        input >> name;
+        stopNamesList.push_back(name);
     }
     input >> howManyLines;
     for (int j = 0; j < howManyLines; ++j) {
+        std::cout << "petla" << j ;
         lineNumbersList.push_back(j);
 //        int howManyVeh;
 //        input >> howManyVeh;
 //        howManyVehiclesEachLine.push_back(howManyVeh);
-        std::vector<std::string>stopNamesList1;
+        std::vector<std::string> stopNamesList1;
         std::vector<int> times;
         std::string line;
         std::getline(input, line);
@@ -49,14 +52,12 @@ void Simulation::readInputData() {
 //        linestream >> word;
 //        std::cout << word;
         int no = 0;
-        while (linestream >> word)
-        {
+        while (linestream >> word) {
 
             if (no == 0) howManyVehiclesEachLine.push_back(stoi(word));
-            else if (no %2 == 1){
+            else if (no % 2 == 1) {
                 stopNamesList1.push_back(word);
-            }
-            else if(no %2 == 0){
+            } else if (no % 2 == 0) {
                 times.push_back(stoi(word));
             }
             no++;
@@ -64,60 +65,75 @@ void Simulation::readInputData() {
         }
         stopsNamesListEachLineList.push_back(stopNamesList1);
         timesEachLineList.push_back(times);
+        std::cout << "wcz";
     }
 //    for (int i = 0; i < howManyLines; ++i) {
 //        input >> howManyPeopleList[i];
 //    } miejsce
     //czasy dojazdow
-//    input >> howManyUnivs;
-//    for (int i = 0; i < howManyUnivs; ++i) {
-//        std::string name, loc;
-//        input >> name; uniNamesList.push_back(name);
-//        input >> loc; uniLocationsList.push_back(loc) ;
-//    }
-//    input >> howManyTheatres;
-//    for (int i = 0; i < howManyTheatres; ++i) {
-//        std::string name, loc;
-//        int cap;
-//        input >> name; theatresNamesList.push_back(name);
-//        input >> loc; theatresLocationsList.push_back(loc);
-//        input >> cap; theatresCapacityList.push_back(cap);
-//    }
-//    input >> howManySC;
-//    for (int i = 0; i < howManySC; ++i) {
-//        std::string name, loc;
-//        input >> name; scNamesList.push_back(name);
-//        input >> loc; scLocationsList.push_back(loc);
-//    }
+    input >> howManyUnivs;
+    for (int i = 0; i < howManyUnivs; ++i) {
+        std::string name, loc;
+        input >> name;
+        uniNamesList.push_back(name);
+        input >> loc;
+        uniLocationsList.push_back(loc);
+    }
+    input >> howManyTheatres;
+    for (int i = 0; i < howManyTheatres; ++i) {
+        std::string name, loc;
+        int cap;
+        input >> name;
+        theatresNamesList.push_back(name);
+        input >> loc;
+        theatresLocationsList.push_back(loc);
+        input >> cap;
+        theatresCapacityList.push_back(cap);
+    }
+    input >> howManySC;
+    for (int i = 0; i < howManySC; ++i) {
+        std::string name, loc;
+        input >> name;
+        scNamesList.push_back(name);
+        input >> loc;
+        scLocationsList.push_back(loc);
+    }
     //czy jestesmy na koncu pliku?
     input.close();
 }
 
 std::ostream &operator<<(std::ostream &os, const Simulation &simulation) {
-    os << "inputFileName: " << simulation.inputFileName << " lengthDays: " << simulation.lengthDays
-       << " probWorkerGoesLunch: " << simulation.probWorkerGoesLunch << " probGoShopping: " << simulation.probGoShopping
-       << " percStudentsTwoUnivs: " << simulation.percStudentsTwoUnivs
-       <<std::endl << " percLessTramsWeekend: "
-       << simulation.percLessTramsWeekend << " tramCapacity: " << simulation.tramCapacity << " howManyStops: "
-       << simulation.howManyStops << std::endl;
-        for(auto stopName:simulation.stopNamesList){
-            os << stopName << std::endl;
+    os << "inputFileName: " << simulation.inputFileName
+       << " \nlengthDays: " << simulation.lengthDays
+       << "\nprobWorkerGoesLunch: " << simulation.probWorkerGoesLunch
+       << " \nprobGoShopping: " << simulation.probGoShopping
+       << "\npercStudentsTwoUnivs: " << simulation.percStudentsTwoUnivs
+       << "\n percLessTramsWeekend: " << simulation.percLessTramsWeekend
+       << "\ntramCapacity: " << simulation.tramCapacity
+       << "\nhowManyStops: " << simulation.howManyStops << std::endl;
+    for (auto stopName:simulation.stopNamesList) {
+        os << stopName << std::endl;
+    }
+    os << "howManyLines: " << simulation.howManyLines << '\n';
+    for (int i = 0; i <simulation.howManyLines; i++) {
+        os << "petla " << i;
+        for (auto j: simulation.stopsNamesListEachLineList[i]) {
+            os << j << '\t';
         }
-    os<< " howManyLines: " << simulation.howManyLines << '\n';
-    for(int i = 0; i < simulation.howManyLines; i++){
-        for(auto j: simulation.stopsNamesListEachLineList[i]){
-            os << j <<'\t';
-
+        for (auto k: simulation.timesEachLineList[i]) {
+            os << k << '\t';
         }
     }
 
-    os<< " \n howManyUnivs: "
-       << simulation.howManyUnivs << " howManyTheatres: " << simulation.howManyTheatres << " howManySC: "
+    os << " \nhowManyUnivs: "
+       << simulation.howManyUnivs << " \nhowManyTheatres: " << simulation.howManyTheatres << "\nhowManySC: "
        << simulation.howManySC;
     return os;
 }
 
-Simulation::Simulation(const std::string &inputFileName, int length) : inputFileName(inputFileName), lengthDays(length) {
+Simulation::Simulation(const std::string &inputFileName, int length) : inputFileName(inputFileName),
+                                                                       lengthDays(length) {
     readInputData();
+    //create
 }
 

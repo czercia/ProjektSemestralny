@@ -47,8 +47,10 @@ class Simulation {
     std::vector<std::string> scNamesList;
     std::vector<std::string> scLocationsList;
     std::vector<Stop> listOfStops;
+
 //    std::vector<Teatr> listaTeatrow;
     void readInputData();
+
 public:
 
     friend std::ostream &operator<<(std::ostream &os, const Simulation &simulation);
